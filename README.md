@@ -2,7 +2,7 @@
 
 ## Semana 1 - 27/06/22
 
-[Veja a resolução do exercício aqui!]()
+[Veja a resolução do exercício aqui!](https://petry078.github.io/devinhouse/)
 
 ### [M1S01] Ex 1 - Primeiros Passos
 ### [M1S01] Ex 2 - Utilizando imagens
