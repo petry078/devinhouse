@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reported Events</title>
+    <link rel="stylesheet" href="/Semana 2/index.css">
+    <link rel="icon" type="image/x-icon" href="https://reported.space/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="https://reported.space/favicon.ico" alt="logo">
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="">Events</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="text-center">Reported Events</h1>
+        <h2 class="text-center">Information, technology and computers</h2>
+        <h2 class="text-center">Events we host:</h2>
+
+        <section class="event-section">
+            <div class="main-event text-center">
+                <img src="/Semana 2/images/0.png" alt="">
+                <h2>Intelbras Code Summoners</h2>
+                <p>Code is just like magic!</p>
+                <p>Gandalf Hotel Theatre — 7 july 2022, 19h.</p>
+                <Button>Buy tickets!</Button>
+            </div>
+            <br>
+        </section>
+
+        <section class="events">
+            <div class="card text-center">
+                <img src="/Semana 2/images/1.png" alt="">
+                <h2>DEVinHouse Tech Wizards</h2>
+                <p>Feel the power of code!</p>
+                <Button>Buy tickets!</Button>
+            </div>
+
+            <div class="card text-center">
+                <img src="/Semana 2/images/2.png" alt="">
+                <h2>Generationdev  Java Ancients</h2>
+                <p>Blackest Java in Practice!</p>
+                <Button>Buy tickets!</Button>
+            </div>
+
+            <div class="card text-center">
+                <img src="/Semana 2/images/3.jpg" alt="">
+                <h2>CyberWitchcraft</h2>
+                <p>Don't let the machine rule you!</p>
+                <Button>Buy tickets!</Button>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <section class="form">
+        <form action="" id="form" onsubmit="formData(event)">
+        <h2 class="text-center">Got questions? Contact us!</h2>
+        <textarea name="name" id="textarea-name" rows="1" placeholder="Name:"></textarea>
+        <textarea name="email" id="textarea-email" rows="1" placeholder="E-mail:"></textarea>
+        <textarea name="message" id="textarea-message" rows="1" placeholder="Message:"></textarea>
+        <button class="send-button" type="submit">Send!</button>
+        </form>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <footer class="text-center">
+        <p>Copyright 2022 — All rights reserved to Reported Events Corp.</p> 
+        <p>+55 11 98636-3636</p>
+        <p>reported@corp.com</p>
+        <p>The Shire</p>
+    </footer>
+</body>
+
+<script>
+    function formData (){
+        event.preventDefault();
+        var userName = document.getElementById("textarea-name")
+        var userEmail = document.getElementById("textarea-email")
+        var userMessage = document.getElementById("textarea-message")
+
+        console.log(userName.value)
+        console.log(userEmail.value)
+        console.log(userMessage.value)
+
+        alert(userName.value + "\n" + userEmail.value + "\n" + userMessage.value)
+    }
+</script>
+</html>

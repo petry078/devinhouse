@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10 — Semana 2</title>
+</head>
+<body>
+    <h1 id="h1-final">Título da página</h1>
+    
+        <input id="h1" type="text" placeholder="Defina um novo título para esta página:">
+        <button id="set-button" type="submit" onclick="setNewH1()">Set new H1!</button>
+    
+    
+</body>
+
+<script>
+    function setNewH1 () {
+        var newH1 = document.getElementById("h1").value;
+        document.getElementById("h1-final").innerHTML = newH1;
+    }
+</script>
+</html>
