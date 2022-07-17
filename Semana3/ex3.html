@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[M1S03] Ex 3 - Criar uma calculadora</title>
+</head>
+
+<script>
+    var x = prompt("Número 1:")
+    var operador = prompt("Qual operação quer fazer? (Pode ser +, -, *, /)")
+    var y = prompt("Número 2:")
+    var num1 = parseInt(x);
+    var num2 = parseInt(y);
+
+    if (operador == "+"){
+        var soma = num1 + num2;
+        alert("O resultado da sua soma é: " + soma)
+    } else if (operador == "-") {
+        var subtracao = num1 - num2;
+        alert("O resultado da sua subtração é: " + subtracao)
+    } else if (operador == "*") {
+        var multiplicacao = num1 * num2;
+        alert("O resultado da sua multiplicação é: " + multiplicacao)
+    } else if (operador == "/"){
+        var divisao = num1 / num2;
+        alert("O resultado da sua divisão é: " + divisao)
+    }
+</script>
+
+<body>
+    <main>
+        <h1>[M1S03] Ex 3 - Criar uma calculadora</h1>
+        <p>Atualize a página e insira os números e as operações através dos prompts.</p>
+    </main>
+</body>
+</html>
