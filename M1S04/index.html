@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevInBanks</title>
+</head>
+    <style>
+        body {
+            height: 97vh;
+            width: 99vw;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        #form {
+            display: flex;
+            gap: 30px;
+        }
+    </style>
+<body>
+    <h1>DevInBanks</h1>
+
+    <form id="form">
+        <!--cliente-->
+        <div class="formGroup">
+            <select id="cliente" class="field"></select>
+        </div>
+
+        <!--$-->
+        <div class="formGroup">
+            <select id="conta" class="field"></select>
+        </div>
+
+        <!--Operação-->
+        <div class="formGroup">
+            <select id="operacao" class="field">
+                <option value="1">Sacar</option>
+                <option value="2">Depositar</option>
+            </select>
+        </div>
+
+        <!--Senha-->
+        <div class="formGroup">
+            <select id="senha" class="field"></select>
+        </div>
+
+        <button id="btnConfirm" class="btnConfirmClass">Confirmar</button>
+    </form>
+    
+</body>
+    <script>
+        const options = [
+            { id: 1, nome: 'Bruno Roberto', saldo: 699, },
+            { id: 2, nome: 'Margareth Reis', saldo: 4200, },
+            { id: 3, nome: 'Guilherme Mercadante', saldo: 7000, },
+        ];
+    </script>
+
+</html>
