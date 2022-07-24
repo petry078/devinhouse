@@ -58,11 +58,17 @@
     
 </body>
     <script>
-        const options = [
+        const contasClientes = [
             { id: 1, nome: 'Bruno Roberto', saldo: 699, },
             { id: 2, nome: 'Margareth Reis', saldo: 4200, },
             { id: 3, nome: 'Guilherme Mercadante', saldo: 7000, },
         ];
+
+        let clientes = document.getElementById("cliente")
+        contasClientes.forEach(item =>{
+            let option = new Option(item.nome)
+            clientes.options[clientes.options.length] = option
+        })
     </script>
 
 </html>
